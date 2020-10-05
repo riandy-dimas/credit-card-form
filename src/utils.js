@@ -37,6 +37,9 @@ function getCardColorByType(cardType = "other") {
     case cards.jcb:
       color = "rgb(0, 92, 172)";
       break;
+    case cards.dinersclub:
+      color = "rgb(24, 73, 119)";
+      break;
     default:
       break;
   }
