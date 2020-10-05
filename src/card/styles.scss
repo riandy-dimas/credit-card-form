@@ -4,6 +4,7 @@ $visa_color: rgb(0, 87, 159);
 $discover_color: rgb(188, 44, 27);
 $mastercard_color: rgb(248, 159, 21);
 $amex_color: rgb(0, 112, 209);
+$jcb_color: rgb(0, 92, 172);
 $other_color: #484848;
 $ani_time: 200ms;
 $flip_time: 500ms;
@@ -138,6 +139,34 @@ $flip_time: 500ms;
   }
   &-amex.card--back {
     background-color: rgba($amex_color, 0.2);
+  }
+
+  &-jcb,
+  &-jcb .card--cvv {
+    border-color: $jcb_color;
+    g {
+      fill: rgba($jcb_color, 0.2);
+    }
+    & .card--logo {
+      background-size: 100%;
+      background-image: url("../assets/jcb_logo.jpg");
+    }
+    & .card--number {
+      padding-left: 20px;
+      justify-content: flex-start;
+    }
+  }
+  &-jcb .card--signature {
+    background: repeating-linear-gradient(
+      45deg,
+      #eeeeee,
+      #eeeeee 10px,
+      lighten($jcb_color, 50%) 10px,
+      lighten($jcb_color, 50%) 20px
+    );
+  }
+  &-jcb.card--back {
+    background-color: rgba($jcb_color, 0.2);
   }
 
   &-other {
