@@ -34,6 +34,9 @@ function getCardColorByType(cardType = "other") {
     case cards.amex:
       color = "rgb(0, 112, 209)";
       break;
+    case cards.jcb:
+      color = "rgb(0, 92, 172)";
+      break;
     default:
       break;
   }
