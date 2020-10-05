@@ -141,7 +141,7 @@ $flip_time: 500ms;
   &-amex.card--back {
     background-color: rgba($amex_color, 0.2);
   }
-  
+
   &-jcb,
   &-jcb .card--cvv {
     border-color: $jcb_color;
@@ -168,22 +168,6 @@ $flip_time: 500ms;
   }
   &-jcb.card--back {
     background-color: rgba($jcb_color, 0.2);
-  }
-
-  &-other {
-    border-color: $other_color;
-  }
-
-  &--wrapper {
-    perspective: 1000px;
-  }
-
-  &--world {
-    position: absolute;
-    z-index: -1;
-    width: 125%;
-    top: 20px;
-    left: -34px;
   }
 
   &-dinersclub,
