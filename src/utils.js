@@ -36,6 +36,7 @@ function getCardColorByType(cardType = "other") {
       break;
     case cards.maestro:
       color = "rgb(196, 81, 225)";
+      break;
     default:
       break;
   }
