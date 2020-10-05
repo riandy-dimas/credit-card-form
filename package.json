@@ -9,10 +9,11 @@
   ],
   "main": "src/main/index.js",
   "dependencies": {
+    "node-sass": "^4.14.1",
     "payment": "2.3.0",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "react-scripts": "2.0.3"
+    "react-scripts": "^3.4.3"
   },
   "devDependencies": {},
   "scripts": {

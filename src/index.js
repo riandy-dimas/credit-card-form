@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import CreditCardCheckout from "../CreditCardCheckout.jsx";
+import CreditCardCheckout from "./CreditCardCheckout.jsx";
 
-import "./styles.scss";
+import "./main/styles.scss";
 
 function App() {
   const [name, setName] = useState("Riandy Dimas");

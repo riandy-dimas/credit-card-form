@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import utils from "../utils";
 import "./styles.scss";
-import world from "../../assets/world.jsx";
+import world from "../assets/world.jsx";
 
 class Card extends PureComponent {
   render() {
