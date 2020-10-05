@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans");
+
+.input {
+  width: 100%;
+  font-family: "PT Sans", sans-serif;
+  margin-bottom: 15px;
+  position: relative;
+  & > input {
+    font-family: "PT Sans", sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #686868;
+    background: transparent;
+    outline: none;
+    transition: border 300ms ease;
+
+    &::placeholder {
+      // font-style: italic;
+      opacity: 0.5;
+      font-weight: 500;
+    }
+  }
+
+  &-mono > input {
+    font-family: "PT Mono", monospace;
+  }
+
+  &-bold > input {
+    font-weight: 900;
+  }
+
+  &-focus {
+    input {
+      border-bottom: 2px solid #080808;
+    }
+    .input--label {
+      font-weight: 900;
+      font-size: 11px;
+    }
+  }
+
+  &--label {
+    font-size: 10px;
+    text-align: left;
+    transition: all 100ms ease;
+    line-height: 14px;
+    user-select: none;
+  }
+
+  &--error {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    font-size: 16px;
+  }
+}

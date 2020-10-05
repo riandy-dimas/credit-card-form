@@ -1,0 +1,30 @@
+{
+  "name": "1-credit-card-form",
+  "version": "1.0.0",
+  "description": "Just a simple credit card form :)  The design was purely my idea --I know the design is awful-- But I made this component for you guys :) Just a little modify needed to use it.",
+  "keywords": [
+    "credit card",
+    "form",
+    "card form"
+  ],
+  "main": "src/main/index.js",
+  "dependencies": {
+    "payment": "2.3.0",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-scripts": "2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

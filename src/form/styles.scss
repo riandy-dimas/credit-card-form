@@ -1,0 +1,36 @@
+.form {
+  width: 200px;
+  color: #484848;
+  border: 2px solid #484848;
+  background: #fff;
+  padding: 15px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  grid-template-columns: calc(50% - 8px) calc(50% - 8px);
+  grid-column-gap: 16px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "full1 full1"
+    "full2 full2"
+    "half1 half2";
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  margin-right: 15px;
+  &--input {
+    &-half1 {
+      grid-area: half1;
+    }
+    &-half2 {
+      grid-area: half2;
+    }
+    &-full1 {
+      grid-area: full1;
+    }
+    &-full2 {
+      grid-area: full2;
+    }
+  }
+}

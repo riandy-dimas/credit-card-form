@@ -1,0 +1,19 @@
+html {
+  background-image: radial-gradient(circle, #e4efff, #a6b6d4, #6f7fa9, #3d4b7f, #091c55);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 550px;
+  border-radius: 10px;
+  margin: 30px auto;
+}
