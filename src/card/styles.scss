@@ -141,6 +141,50 @@ $flip_time: 500ms;
   &-amex.card--back {
     background-color: rgba($amex_color, 0.2);
   }
+  
+  &-jcb,
+  &-jcb .card--cvv {
+    border-color: $jcb_color;
+    g {
+      fill: rgba($jcb_color, 0.2);
+    }
+    & .card--logo {
+      background-size: 100%;
+      background-image: url("../assets/jcb_logo.jpg");
+    }
+    & .card--number {
+      padding-left: 20px;
+      justify-content: flex-start;
+    }
+  }
+  &-jcb .card--signature {
+    background: repeating-linear-gradient(
+      45deg,
+      #eeeeee,
+      #eeeeee 10px,
+      lighten($jcb_color, 50%) 10px,
+      lighten($jcb_color, 50%) 20px
+    );
+  }
+  &-jcb.card--back {
+    background-color: rgba($jcb_color, 0.2);
+  }
+
+  &-other {
+    border-color: $other_color;
+  }
+
+  &--wrapper {
+    perspective: 1000px;
+  }
+
+  &--world {
+    position: absolute;
+    z-index: -1;
+    width: 125%;
+    top: 20px;
+    left: -34px;
+  }
 
   &-dinersclub,
   &-dinersclub .card--cvv {
