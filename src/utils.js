@@ -3,10 +3,10 @@ import Payment from "payment";
 function getCardTypeList() {
   const cards = Payment.getCardArray();
   let result = {};
-  cards.forEach(card => {
+  cards.forEach((card) => {
     result = {
       ...result,
-      [card]: card
+      [card]: card,
     };
   });
   return result;
@@ -34,6 +34,8 @@ function getCardColorByType(cardType = "other") {
     case cards.amex:
       color = "rgb(0, 112, 209)";
       break;
+    case cards.maestro:
+      color = "rgb(196, 81, 225)";
     default:
       break;
   }
@@ -64,7 +66,7 @@ function getCardType(number = "") {
 }
 
 function convertUnicode(input) {
-  return input.replace(/\\u(\w\w\w\w)/g, function(a, b) {
+  return input.replace(/\\u(\w\w\w\w)/g, function (a, b) {
     var charcode = parseInt(b, 16);
     return String.fromCharCode(charcode);
   });
@@ -78,5 +80,5 @@ export default {
   getCardColorByType,
   getCardTypeList,
   validateCardNumber,
-  convertUnicode
+  convertUnicode,
 };
