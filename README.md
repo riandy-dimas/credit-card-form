@@ -1,2 +1,3 @@
 # credit-card-form
-Created with CodeSandbox
+
+Simple credit card input field.
