@@ -3,8 +3,8 @@
 This is a simple credit card UI that also validate what credit cards you are used when inserting the card number.
 
 ### Developing
-To start develop this project you can simply do these steps:
-1. Run `npm install` once you finished cloning this repository.
+To start develop this project in your local machine you can simply do these steps:
+1. Run `npm install` from the root folder once you finished cloning this repository.
 2. `npm start` to run the app.
 3. Update the files and happy code!
 
