@@ -43,6 +43,9 @@ function getCardColorByType(cardType = "other") {
     case cards.hipercard:
       color = "rgb(179, 19, 27)";
       break;
+    case cards.unionpay:
+      color = "rgb(184, 184, 184)";
+      break;
     default:
       break;
   }
