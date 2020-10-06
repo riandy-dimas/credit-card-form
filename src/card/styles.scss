@@ -198,34 +198,6 @@ $flip_time: 500ms;
   &-dinersclub.card--back {
     background-color: rgba($dinersclub_color, 0.2);
   }
-
-  &-hipercard,
-  &-hipercard .card--cvv {
-    border-color: $hipercard_color;
-    g {
-      fill: rgba($hipercard_color, 0.2);
-    }
-    & .card--logo {
-      background-size: 100%;
-      background-image: url("../assets/hipercard_logo.png");
-    }
-    & .card--number {
-      padding-left: 20px;
-      justify-content: flex-start;
-    }
-  }
-  &-hipercard .card--signature {
-    background: repeating-linear-gradient(
-      45deg,
-      #eeeeee,
-      #eeeeee 10px,
-      lighten($hipercard_color, 50%) 10px,
-      lighten($hipercard_color, 50%) 20px
-    );
-  }
-  &-hipercard.card--back {
-    background-color: rgba($hipercard_color, 0.2);
-  }
   
   &-unionpay,
   &-unionpay .card--cvv {

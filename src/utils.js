@@ -40,9 +40,6 @@ function getCardColorByType(cardType = "other") {
     case cards.dinersclub:
       color = "rgb(24, 73, 119)";
       break;
-    case cards.hipercard:
-      color = "rgb(179, 19, 27)";
-      break;
     case cards.unionpay:
       color = "rgb(184, 184, 184)";
       break;
