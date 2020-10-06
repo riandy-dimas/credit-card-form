@@ -198,7 +198,7 @@ $flip_time: 500ms;
   &-dinersclub.card--back {
     background-color: rgba($dinersclub_color, 0.2);
   }
-  
+
   &-unionpay,
   &-unionpay .card--cvv {
     border-color: $unionpay_color;
@@ -207,7 +207,7 @@ $flip_time: 500ms;
     }
     & .card--logo {
       background-size: 100%;
-      background-image: url("../assets/hipercard_logo.png");
+      background-image: url("../assets/unionpay_logo.png");
     }
     & .card--number {
       padding-left: 20px;
