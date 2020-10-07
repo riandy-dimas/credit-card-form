@@ -7,6 +7,7 @@ $amex_color: rgb(0, 112, 209);
 $jcb_color: rgb(0, 92, 172);
 $dinersclub_color: rgb(24, 73, 119);
 $unionpay_color: rgb(184, 184, 184);
+$elo_color: rgb(17, 19, 19);
 $other_color: #484848;
 $ani_time: 200ms;
 $flip_time: 500ms;
@@ -225,6 +226,34 @@ $flip_time: 500ms;
   }
   &-unionpay.card--back {
     background-color: rgba($unionpay_color, 0.2);
+  }
+
+  &-elo,
+  &-elo .card--cvv {
+    border-color: $elo_color;
+    g {
+      fill: rgba($elo_color, 0.2);
+    }
+    & .card--logo {
+      background-size: 100%;
+      background-image: url("../assets/elo_logo.png");
+    }
+    & .card--number {
+      padding-left: 20px;
+      justify-content: flex-start;
+    }
+  }
+  &-elo .card--signature {
+    background: repeating-linear-gradient(
+      45deg,
+      #eeeeee,
+      #eeeeee 10px,
+      lighten($elo_color, 50%) 10px,
+      lighten($elo_color, 50%) 20px
+    );
+  }
+  &-elo.card--back {
+    background-color: rgba($elo_color, 0.2);
   }
 
   &-other {
