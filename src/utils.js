@@ -43,6 +43,9 @@ function getCardColorByType(cardType = "other") {
     case cards.unionpay:
       color = "rgb(184, 184, 184)";
       break;
+    case cards.elo:
+      color = "rgb(17, 19, 19)";
+      break;
     default:
       break;
   }
