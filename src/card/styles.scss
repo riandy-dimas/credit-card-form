@@ -54,7 +54,7 @@ $flip_time: 500ms;
     }
     & .card--logo {
       background-size: 80%;
-      background-image: url("https://uploads.codesandbox.io/uploads/user/05ecbb71-49a1-4af7-bf06-27c4046fa1c5/ZsDH-Visa_Inc._logo.svg.png");
+      background-image: url("../assets/visa_logo.png");
     }
   }
   &-visa .card--signature {
@@ -77,7 +77,7 @@ $flip_time: 500ms;
       fill: rgba($mastercard_color, 0.2);
     }
     & .card--logo {
-      background-image: url("https://uploads.codesandbox.io/uploads/user/05ecbb71-49a1-4af7-bf06-27c4046fa1c5/RDaJ-128px-Mastercard-logo.svg.png");
+      background-image: url("../assets/masterc_logo.png");
     }
   }
   &-mastercard .card--signature {
@@ -100,7 +100,7 @@ $flip_time: 500ms;
       fill: rgba($discover_color, 0.2);
     }
     & .card--logo {
-      background-image: url("https://uploads.codesandbox.io/uploads/user/05ecbb71-49a1-4af7-bf06-27c4046fa1c5/e8s_-127px-Discover_Card_logo.svg.png");
+      background-image: url("../assets/discover_logo.png");
     }
   }
   &-discover .card--signature {
@@ -124,7 +124,7 @@ $flip_time: 500ms;
     }
     & .card--logo {
       background-size: 100%;
-      background-image: url("https://uploads.codesandbox.io/uploads/user/05ecbb71-49a1-4af7-bf06-27c4046fa1c5/VF8c-american-express-6-675747.png");
+      background-image: url("../assets/amex_logo.png");
     }
     & .card--number {
       padding-left: 20px;
