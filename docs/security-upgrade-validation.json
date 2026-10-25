@@ -1,0 +1,176 @@
+{
+  "date": "2026-10-25",
+  "repository": "credit-card-form",
+  "baselineHead": "1ecd4daef10f9bd707ed016dc1b9a08e871dcdb0",
+  "baselineVersions": {
+    "node-sass": "^4.14.1",
+    "payment": "2.3.0",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-scripts": "^3.4.3"
+  },
+  "versions": {
+    "node": "24.22.1",
+    "engines": "24.x",
+    "packageManager": "npm@11.19.1",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-scripts": "5.0.1",
+    "sass": "1.106.1"
+  },
+  "lockfile": "package-lock.json",
+  "lockSha256": "05a5e55a5722c0a3d5865d467c8355ca7e586028deac0c863090d6955a7f4e91",
+  "baselineAudit": {
+    "info": 0,
+    "low": 9,
+    "moderate": 129,
+    "high": 71,
+    "critical": 19,
+    "total": 228
+  },
+  "audits": {
+    "all": {
+      "counts": {
+        "info": 0,
+        "low": 9,
+        "moderate": 29,
+        "high": 15,
+        "critical": 0,
+        "total": 53
+      },
+      "highOrCritical": [
+        "@svgr/plugin-svgo",
+        "@svgr/webpack",
+        "css-select",
+        "node-forge",
+        "nth-check",
+        "postcss",
+        "react-scripts",
+        "rollup-plugin-terser",
+        "selfsigned",
+        "serialize-javascript",
+        "svgo",
+        "webpack-dev-middleware",
+        "webpack-dev-server",
+        "workbox-build",
+        "workbox-webpack-plugin"
+      ]
+    },
+    "production": {
+      "counts": {
+        "info": 0,
+        "low": 9,
+        "moderate": 29,
+        "high": 15,
+        "critical": 0,
+        "total": 53
+      },
+      "highOrCritical": [
+        "@svgr/plugin-svgo",
+        "@svgr/webpack",
+        "css-select",
+        "node-forge",
+        "nth-check",
+        "postcss",
+        "react-scripts",
+        "rollup-plugin-terser",
+        "selfsigned",
+        "serialize-javascript",
+        "svgo",
+        "webpack-dev-middleware",
+        "webpack-dev-server",
+        "workbox-build",
+        "workbox-webpack-plugin"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "phase": "baseline-audit",
+      "command": "npm audit --json",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 48
+    },
+    {
+      "phase": "upgrade-install",
+      "command": "npm install --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 305
+    },
+    {
+      "phase": "final-test",
+      "command": "npm run test -- --passWithNoTests",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 24
+    },
+    {
+      "phase": "final-build",
+      "command": "npm run build",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 175
+    },
+    {
+      "phase": "final-audit",
+      "command": "npm audit --json",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 6
+    },
+    {
+      "phase": "final-production-audit",
+      "command": "npm audit --json --omit=dev",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 2
+    },
+    {
+      "phase": "clean-frozen-install",
+      "command": "npm ci --no-fund --no-audit",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 120
+    },
+    {
+      "phase": "safe-audit-fix",
+      "command": "npm audit fix --no-fund",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 75
+    },
+    {
+      "phase": "verified-build",
+      "command": "npm run build",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 111
+    }
+  ],
+  "browser": {
+    "name": "credit-card-form",
+    "checks": [
+      "name input, card-number spacing, expiry input, CVV length and focus/blur",
+      "desktop and mobile screenshots"
+    ],
+    "errors": [],
+    "pass": true
+  },
+  "notes": [
+    "Browser checks exercise input formatting, CVV limits and desktop/mobile rendering.",
+    "CRA toolchain advisories remain; this PR does not replace the application framework.",
+    "Desktop form interactions pass. Existing fixed desktop layout can overflow at narrow mobile widths; no responsive layout redesign is included."
+  ],
+  "blockers": []
+}

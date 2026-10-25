@@ -1,0 +1,27 @@
+name: Node 24 upgrade checks
+on:
+  pull_request:
+  push:
+    branches: [security/node24-framework-updates]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: .
+    env:
+      CI: 'true'
+      HUSKY: '0'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+      - run: npm install --global npm@11.19.1
+      - run: npm ci
+      - run: npm run test -- --passWithNoTests
+      - run: npm run build
