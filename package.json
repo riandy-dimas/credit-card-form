@@ -9,7 +9,7 @@
   ],
   "main": "src/main/index.js",
   "dependencies": {
-    "payment": "2.3.0",
+    "payment": "2.4.7",
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-scripts": "5.0.1",
